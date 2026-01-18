@@ -167,6 +167,7 @@ header {
 }
 
 /* Error Page */
+
 .error-page {
   flex: 1;
   display: flex;
@@ -221,6 +222,7 @@ footer {
 }
 
 /* Utilities */
+
 .text-center {
   text-align: center;
 }
