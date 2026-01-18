@@ -193,7 +193,6 @@ header {
 }
 
 .error-message {
-  font-size: 1.1rem;
   margin-bottom: 2rem;
   color: var(--primary-color);
 }
