@@ -13,14 +13,16 @@ Mueizhli made organic granola and chocolate-hazelnut spreads for seven years, so
 ## What it does
 
 - Announces the closure with a short, personal message to former customers
-- Keeps the original brand identity (palette, logo, product photography)
+- Keeps the original brand identity (palette, logo, typography, product photography)
 - Replaces the error page visitors would otherwise see
 - Provides a custom 404 page for any other broken URL
 
 ## Technical details
 
 - **Stack:** plain HTML and CSS, no framework, no build step
+- **Typography:** self-hosted League Gothic (open-source, Google Fonts) in WOFF2 format
 - **Logo:** inline SVG, so it stays sharp at any size and needs no extra request
+- **Footer:** copyright year updated automatically via a small inline script
 - **Performance:** WebP images, the hero image preloaded with high fetch priority, the rest lazy loaded
 - **SEO and sharing:** meta description, Open Graph and Twitter Card tags so links display properly when shared
 - **Accessibility:** `lang` attribute, descriptive `alt` text on images, `aria-label` on the logo link
@@ -32,13 +34,15 @@ Mueizhli made organic granola and chocolate-hazelnut spreads for seven years, so
 ```
 .
 ├── assets/
-│   ├── css/                  # stylesheet
-│   ├── favicon/              # favicons and touch icons
-│   └── images/               # product images (WebP)
-├── index.html                # landing page
-├── 404.html                  # custom error page
-├── manifest.webmanifest      # web app manifest
-└── .gitignore
+│   ├── css/
+│   │   └── style.css         # single stylesheet
+│   ├── favicon/               # favicons and touch icons
+│   ├── fonts/                 # self-hosted League Gothic (WOFF2)
+│   └── images/                # product images (WebP)
+├── 404.html                   # custom error page
+├── index.html                 # landing page
+├── manifest.webmanifest       # web app manifest
+└── README.md
 ```
 
 ## Run locally

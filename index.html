@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Mueizhli - la fin d'une aventure</title>
         <meta name="description"
-            content="Mueizhli, la fin d'une aventure">
+            content="Après sept ans d'aventure, Mueizhli met fin à son activité de granola et pâtes à tartiner artisanales. Un grand merci à tous nos clients.">
 
         <!-- Apple Touch Icon -->
         <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
@@ -29,16 +29,16 @@
         <meta property="og:url" content="https://www.mueizhli.com">
         <meta property="og:title" content="Granola bio, artisanal fait à Nantes">
         <meta property="og:description"
-            content="Mueizhli, ce sont des pépites croustillantes de granola artisanal et local, pour un petit-déjeuner sain et gourmand. Fabriqué dans notre atelier à Nantes en Loire-atlantique.">
-        <meta property="og:image" content="https://www.mueizhli.com/assets/images/granola-bowl.webp">
+            content="Après sept ans d'aventure, Mueizhli met fin à son activité de granola et pâtes à tartiner artisanales. Un grand merci à tous nos clients.">
+        <meta property="og:image" content="https://www.mueizhli.com/assets/images/almond-granola.webp">
 
         <!-- Twitter Card -->
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:url" content="https://www.mueizhli.com">
         <meta name="twitter:title" content="Granola bio, artisanal fait à Nantes">
         <meta name="twitter:description"
-            content="Mueizhli, ce sont des pépites croustillantes de granola artisanal et local, pour un petit-déjeuner sain et gourmand. Fabriqué dans notre atelier à Nantes en Loire-atlantique.">
-        <meta name="twitter:image" content="https://www.mueizhli.com/assets/images/granola-bowl.webp">
+            content="Après sept ans d'aventure, Mueizhli met fin à son activité de granola et pâtes à tartiner artisanales. Un grand merci à tous nos clients.">
+        <meta name="twitter:image" content="https://www.mueizhli.com/assets/images/almond-granola.webp">
 
         <link rel="preload" as="image" href="assets/images/almond-granola.webp" fetchpriority="high">
         <link rel="stylesheet" href="assets/css/style.css">
@@ -117,11 +117,14 @@
         </main>
 
         <footer>
-            <span>&copy; 2026 Mueizhli</span>
+            <span>&copy; <span id="copyright-year"></span> Mueizhli</span>
             <span>&bull;</span>
             <span class="credits">
                 <a href="https://www.anthonyquenet.com" target="_blank" rel="noopener noreferrer">Carefully crafted by Anthony Quenet</a>
             </span>
         </footer>
+        <script>
+          document.getElementById("copyright-year").textContent = new Date().getFullYear();
+        </script>
     </body>
 </html>
