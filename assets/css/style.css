@@ -97,6 +97,21 @@ header {
 
 /* Layout */
 
+ul {
+    padding-inline-start: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0px 40px;
+}
+
+section {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
 .hero-blocks {
   display: flex;
   justify-content: center;
